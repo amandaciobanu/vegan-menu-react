@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Menu from './Menu';
 import Categories from './Categories';
+import Banner from './Banner'
 import items from './data';
 
 const allCategories =['all', ...new Set(items.map((item) => item.category))];
@@ -21,6 +22,7 @@ function App() {
 
   return(
   <main>
+    <Banner/>
     <section className="menu section">
       <div className="title">
         <h2>Vegan Menu</h2>

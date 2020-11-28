@@ -26,7 +26,7 @@ Variables
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: hsl(208, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
@@ -137,6 +137,9 @@ p {
   }
 }
 
+
+
+
 /*
 =============== 
 Menu
@@ -175,9 +178,13 @@ Menu
   transition: var(--transition);
   border-radius: var(--radius);
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:active,
+.filter-btn:focus{
   background: var(--clr-gold);
   color: var(--clr-white);
+  border: 1px solid var(--clr-gold);
+  outline: none;
 }
 .section-center {
   width: 90vw;
